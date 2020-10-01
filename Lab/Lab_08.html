@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lab_08</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <style>
+        table {
+            border-radius: 30px;
+        }
+
+        table tr:first-child th:first-child {
+            border-radius: 30px 0 0 0;
+        }
+
+        table tr:first-child th:last-child {
+            border-radius: 0 30px 0 0;
+        }
+
+        table tr:last-child td:first-child {
+            border-radius: 0 0 0 30px;
+        }
+
+        table tr:last-child td:last-child {
+            border-radius: 0 0 30px 0;
+        }
+
+        table {
+            width: 1000px;
+            height: 600px;
+            text-align: center;
+            font-family: 'Noto Sans TC', Microsoft JhengHei, sans-serif;
+        }
+
+        thead tr,
+        tr td:first-child {
+            background-color: gainsboro;
+        }
+
+        .lunch-break {
+            text-align: center;
+            background-color: aliceblue;
+            font-size: 3rem;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        header {
+            font-size: 3rem;
+            height: 100px;
+            background-color: aliceblue;
+        }
+
+        footer {
+            font-size: 3rem;
+            height: 100px;
+            background-color: blanchedalmond;
+        }
+
+        .sidebar {
+            font-size: 3rem;
+            background-color: lavenderblush;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <header>Header</header>
+    <main class="d-flex flex-row flex-grow-1">
+        <aside class="sidebar">
+            Sidebar
+        </aside>
+        <div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-comments mr-1"></i>軟體工程專題</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>10:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-comments mr-1"></i>軟體工程專題</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>11:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-comments mr-1"></i>軟體工程專題</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>12:10</td>
+                        <td colspan="5" class="lunch-break"><i class="fas fa-utensils mr-1"></i>午休<i class="fas fa-bed ml-1"></i></td>
+                    </tr>
+                    <tr>
+                        <td>13:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-book mr-1"></i>資訊概論</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>14:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-book mr-1"></i>資訊概論</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>15:10</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                        <td><i class="fas fa-book mr-1"></i>資訊概論</td>
+                        <td><i class="fab fa-python mr-1"></i>python基礎程式設計</td>
+                        <td><i class="fab fa-html5 mr-1"></i>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>16:10</td>
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="mt-auto">Footer</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+</body>
+
+</html>
